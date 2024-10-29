@@ -21,12 +21,14 @@ All objects are positioned slightly above the ground to emphasize shadow effects
 
 ### Render Output Settings 
 - Render Engine: EEVEE
-- Viewport Samples: 64 (Temporal Reprojection enabled, Jittered Shadows disabled)
-- Render Samples: 4096
-- Shadows: Rays - 3, Steps - 6, Volume Shadows Steps - 16, Resolution - 1.000
-- Light Threshold: 0.010
+- Viewport Samples: 16 (Temporal Reprojection enabled, Jittered Shadows disabled)
+- Render Samples: 1024
+- Shadows: Enabled
 - High-Quality Normals: Enabled
-
+- Memory:
+  - Shadow Pool: 1 GB
+  - Light Probes Volume: 64 MB
+- Viewport Pixel Size: 4x
 
 ### Image link in Repo
 https://github.com/Faiz-Iqbal/F20GA_Group7/blob/a8d3aca583ce0a6d8703e29a191b64057ed5ae7b/Render/Final_ChairAndWardrobe.jpg
@@ -52,11 +54,66 @@ All objects are positioned slightly above the ground to emphasize shadow effects
 
 ### Render Output Settings  
 - Render Engine: EEVEE
+- Viewport Samples: 16 (Temporal Reprojection enabled, Jittered Shadows disabled)
+- Render Samples: 1024
+- Shadows: Enabled
+- High-Quality Normals: Enabled
+- Memory:
+  - Shadow Pool: 1 GB
+  - Light Probes Volume: 64 MB
+- Viewport Pixel Size: 4x
+
+### Image link in Repo
+https://github.com/Faiz-Iqbal/F20GA_Group7/blob/fc8266970a851c54b1d7d855c290e14c0ccb25d7/Render/Final_BedAndPlant.jpg
+
+## 3 - Table and Lamp  
+
+### Modelling Process  
+
+#### Table  
+The table was constructed starting with a cube for the tabletop, scaled to the correct dimensions. The legs were adjusted separately to achieve the desired thickness and height. Loop cuts were added to create drawer details, with faces extruded and handles slightly inset for realism. An array modifier was applied to replicate drawer units evenly, followed by a bevel modifier for smooth edges. On the right side, shelves were created and supported by cylindrical pillars, with segments added for smooth shaping. The table was then finished with a metallic material, polished for a smooth look.
+
+#### Lamp  
+The lamp stand was modeled from a cylinder, using Loop Tools for smooth transitions. The lampshade was hollowed out with the Bool Tool and additional edge loops were added for refined edges. Key parts like the stand and lampshade had a subdivision surface modifier applied for smoother geometry without losing sharp details. The bulb was created from the hollowed-out interior of the lampshade, shaped to resemble a bulb, and given an emissive material to simulate a glow. Additional books were modeled from cubes, with individual pages and cover details added for realism.
+
+### Textures  
+
+- **Wood Textures**: Created using a Noise Texture with Mapping for control, refined with a Color Ramp. This setup was connected to a Principled BSDF for the base color, with a Bump Node and Displacement Node adding surface depth and detail.
+- **Drawers**: Utilized a Color Ramp for base color control, feeding into a Principled BSDF shader with adjusted roughness for a natural finish.
+- **Metal Rods**: Used a Noise Texture connected to a Bump Node to add surface detail. The setup fed into a Principled BSDF with high metallic and low roughness values, creating a realistic metal bar appearance.
+- **Rest of Objects**: Textured with a Principled BSDF shader, adjusted with a diffuse base color and minor tweaks for a simple yet effective material appearance.
+
+### Lighting & Camera  
+All objects are positioned slightly above the ground to enhance shadow effects using a 3-point lighting setup.
+
+### Render Output Settings  
+- Render Engine: EEVEE
+- Viewport Samples: 16 (Temporal Reprojection enabled, Jittered Shadows disabled)
+- Render Samples: 1024
+- Shadows: Enabled
+- High-Quality Normals: Enabled
+- Memory:
+  - Shadow Pool: 1 GB
+  - Light Probes Volume: 64 MB
+- Viewport Pixel Size: 4x
+
+### Image link in Repo
+https://github.com/Faiz-Iqbal/F20GA_Group7/blob/7e3057dae7e6209429d107486e24a6e2d74ac71c/Render/Final_Render_Table%26Lamp.jpg
+
+## Final Isometric Room Render  
+
+The final room render includes additional details to enhance realism. A window was created using an Emission Shader applied to a cube, giving the appearance of natural light entering the room. A dustbin was modeled from a cylinder mesh, scaled and extruded for the shape, with paper balls crafted by manipulating vertices of a sphere in Edit Mode for an irregular, crumpled look. Only the carpet and picture frame were imported assets, keeping the rest of the objects custom-made.
+
+Link to Image in Repo: https://github.com/Faiz-Iqbal/F20GA_Group7/blob/7e3057dae7e6209429d107486e24a6e2d74ac71c/Render/Final_Isometric_Room.jpg
+
+### Final Render Output Settings  
+- Render Engine: EEVEE
 - Viewport Samples: 64 (Temporal Reprojection enabled, Jittered Shadows disabled)
 - Render Samples: 4096
 - Shadows: Rays - 3, Steps - 6, Volume Shadows Steps - 16, Resolution - 1.000
 - Light Threshold: 0.010
 - High-Quality Normals: Enabled
 
-### Image link in Repo
-https://github.com/Faiz-Iqbal/F20GA_Group7/blob/fc8266970a851c54b1d7d855c290e14c0ccb25d7/Render/Final_BedAndPlant.jpg
+## Overall Camera & Lighting  
+
+The camera was positioned at an angle to capture a clear, comprehensive view of the entire room setup. A traditional 3-point lighting setup was employed with a 2:1:0.5 ratio, using Area Lights for each source. The Key Light provided primary illumination and defined shadows, the Fill Light softened shadows and balanced the lighting, and the Back Light added separation and depth to the scene. Additionally, spotlights were strategically placed in various locations to emphasize specific details. The scene was rendered using the Eevee render engine, chosen for its real-time performance, making it ideal for quick previews and the final render.
