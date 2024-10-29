@@ -1,3 +1,10 @@
+# Table of Contents
+- [1 - Chair and Wardrobe](#1---chair-and-wardrobe)
+- [2 - Bed and Plant](#2---bed-and-plant)
+- [3 - Table and Lamp](#3---table-and-lamp)
+- [4 - Final Isometric Room Render](#4---final-isometric-room-render)
+- [5 - Overall Camera & Lighting](#5---overall-camera--lighting)
+
 # Part 1 - High-quality Offline Rendering of Objects
 
 This deliverable consists of rendered images showcasing each object, created by individual group members, alongside shared background models, lighting, materials, and overall scene setup. All rendered images are designed to fit a cohesive theme and style. Incremental work, including sketches, early models, and pre-renders, is also documented.
