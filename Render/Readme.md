@@ -1,6 +1,6 @@
 # Part 1 - High-quality Offline Rendering of Objects
 
-This deliverable consists of rendered images showcasing each object, created by individual group members, alongside shared background models, lighting, materials, and overall scene setup. All rendered images are designed to fit a cohesive theme and style. Incremental work, including sketches, early models, and pre-renders, will also be documented.
+This deliverable consists of rendered images showcasing each object, created by individual group members, alongside shared background models, lighting, materials, and overall scene setup. All rendered images are designed to fit a cohesive theme and style. Incremental work, including sketches, early models, and pre-renders, is also documented.
 
 ## 1 - Chair and Wardrobe  
 
@@ -77,11 +77,7 @@ The table was constructed starting with a cube for the tabletop, scaled to the c
 The lamp stand was modeled from a cylinder, using Loop Tools for smooth transitions. The lampshade was hollowed out with the Bool Tool and additional edge loops were added for refined edges. Key parts like the stand and lampshade had a subdivision surface modifier applied for smoother geometry without losing sharp details. The bulb was created from the hollowed-out interior of the lampshade, shaped to resemble a bulb, and given an emissive material to simulate a glow. Additional books were modeled from cubes, with individual pages and cover details added for realism.
 
 ### Textures  
-
-- **Wood Textures**: Created using a Noise Texture with Mapping for control, refined with a Color Ramp. This setup was connected to a Principled BSDF for the base color, with a Bump Node and Displacement Node adding surface depth and detail.
-- **Drawers**: Utilized a Color Ramp for base color control, feeding into a Principled BSDF shader with adjusted roughness for a natural finish.
-- **Metal Rods**: Used a Noise Texture connected to a Bump Node to add surface detail. The setup fed into a Principled BSDF with high metallic and low roughness values, creating a realistic metal bar appearance.
-- **Rest of Objects**: Textured with a Principled BSDF shader, adjusted with a diffuse base color and minor tweaks for a simple yet effective material appearance.
+Wood textures were created using a Noise Texture with Mapping for control, refined with a Color Ramp, and connected to a Principled BSDF for the base color, while a Bump Node and Displacement Node added surface depth and detail. The drawers used a Color Ramp for base color control, feeding into a Principled BSDF shader with adjusted roughness for a natural finish. For the metal rods, a Noise Texture connected to a Bump Node added surface detail, with a Principled BSDF shader set to high metallic and low roughness values for a realistic metal appearance. The rest of the objects were textured with a Principled BSDF shader, adjusted with a diffuse base color and minor tweaks to create a simple yet effective material look.
 
 ### Lighting & Camera  
 All objects are positioned slightly above the ground to enhance shadow effects using a 3-point lighting setup.
@@ -100,7 +96,7 @@ All objects are positioned slightly above the ground to enhance shadow effects u
 ### Image link in Repo
 https://github.com/Faiz-Iqbal/F20GA_Group7/blob/7e3057dae7e6209429d107486e24a6e2d74ac71c/Render/Final_Render_Table%26Lamp.jpg
 
-## Final Isometric Room Render  
+## 4 - Final Isometric Room Render  
 
 The final room render includes additional details to enhance realism. A window was created using an Emission Shader applied to a cube, giving the appearance of natural light entering the room. A dustbin was modeled from a cylinder mesh, scaled and extruded for the shape, with paper balls crafted by manipulating vertices of a sphere in Edit Mode for an irregular, crumpled look. Only the carpet and picture frame were imported assets, keeping the rest of the objects custom-made.
 
@@ -114,6 +110,18 @@ Link to Image in Repo: https://github.com/Faiz-Iqbal/F20GA_Group7/blob/7e3057dae
 - Light Threshold: 0.010
 - High-Quality Normals: Enabled
 
-## Overall Camera & Lighting  
+## 5 - Overall Camera & Lighting  
 
-The camera was positioned at an angle to capture a clear, comprehensive view of the entire room setup. A traditional 3-point lighting setup was employed with a 2:1:0.5 ratio, using Area Lights for each source. The Key Light provided primary illumination and defined shadows, the Fill Light softened shadows and balanced the lighting, and the Back Light added separation and depth to the scene. Additionally, spotlights were strategically placed in various locations to emphasize specific details. The scene was rendered using the Eevee render engine, chosen for its real-time performance, making it ideal for quick previews and the final render.
+The camera setup was carefully positioned at an elevated angle to provide a comprehensive view of the entire room, ensuring all key elements were visible while maintaining a balanced composition. The chosen angle highlights the spatial relationships between objects and creates a visually engaging perspective, capturing the depth and layout of the scene. This positioning also allowed an effective demonstration of the lighting setup, showing shadow falloff and object highlights.
+
+A traditional 3-point lighting setup was employed to achieve balanced and realistic lighting, using a 2:1:0.5 intensity ratio between the Key, Fill, and Back Lights. 
+
+**Key Light**: Positioned at a high angle in front of the main focal area, the Key Light served as the primary source of illumination, set at twice the intensity of the Fill Light to establish the dominant lighting direction. The Key Light was angled to cast clear directional shadows, defining the texture and contours of key objects such as the table, chair, and bed. This light was also adjusted to enhance the textures on surfaces, like wood grain on the table and the fabric on the chair, providing sharp, well-defined shadows that added realism and depth to the scene.
+
+**Fill Light**: The Fill Light was placed opposite the Key Light, at half the Key Light’s intensity, to soften shadows and reduce contrast in the darker areas of the room. This light helped distribute the illumination more evenly, preventing harsh contrasts and preserving details in the shadowed areas. By providing a balanced light across the scene, the Fill Light kept the atmosphere natural while ensuring that secondary elements, such as shelves and smaller items, were subtly highlighted without taking attention away from the main focal points.
+
+**Back Light**: Positioned behind and slightly above the main objects, the Back Light provided a soft glow that separated the objects from the background, enhancing the scene's depth. Set at a low intensity (0.5 times the strength of the Key Light), it created delicate highlights along the edges of objects, accentuating contours and enhancing the sense of space. This subtle rim lighting was particularly effective for objects with defined shapes, like the chair back, lamp, and shelves, providing a sense of dimension and realism without overpowering the scene.
+
+In addition to the 3-point lighting setup, spotlights were strategically placed to enhance specific areas. For example, a spotlight focused on the table area emphasized the metallic and wood textures, while another directed at the plant brought out details in the leaves and pot. These spotlights provided localized highlights, adding visual interest and guiding the viewer’s attention around the room.
+
+The entire lighting setup was optimized for the Eevee render engine, selected for its real-time rendering capabilities and speed. This engine allowed for rapid adjustments and previews, enabling fine-tuning of both lighting and composition. High sample rates and optimized shadow settings were used to enhance the visual quality of the final render, ensuring crisp shadows and minimal noise. Eevee’s blend of real-time feedback and quality results made it ideal for creating the intended atmosphere and achieving a polished, professional final render.
