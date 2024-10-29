@@ -7,36 +7,25 @@ This deliverable consists of rendered images showcasing each object, created by 
 ### Modelling Process  
 
 #### Chair Body  
-The chair's body began as a simple cube with the top and front faces deleted to form an L-shape base for the chair. Subdividing the mesh allowed for smooth curves, which were further enhanced by applying a subdivision surface modifier for a rounded finish. A solidify modifier was added for thickness, and loop cuts were used to create cushion borders, defining the edges. 
-
-The backrest segment includes a beveled edge for added softness, complemented by auto smooth shading. Sculpt mode adjustments, such as shrinking the face set into smaller segments, introduced dips and bulges, which were further refined with a cloth filter to achieve a cushion-like texture. This completed the chair body.
+The chair body was modeled from a basic cube, reshaped into an "L" by removing the top and front faces. Subdivision and solidify modifiers were applied to create a smooth, rounded finish. Loop cuts were added to define cushion edges, and the backrest was beveled for a softer look. In sculpt mode, dips and bulges were added for a cushion effect, enhanced with a cloth filter for softness.
 
 #### Metal Rod, Legs, and Wheels  
-The metal rod began as a basic cylinder. Using the inset tool, an inner face was created, followed by multiple extrusions along the rod, with scale adjustments at each step to form ridges and create a sturdy base.
-
-The legs were modeled as cylindrical shapes with wheels attached, formed through inset, extrusion, and loop cuts. To simplify, the wheel and leg were joined as a single object. The array modifier was then applied to create five evenly spaced legs. An empty object was used as a rotation reference point to ensure accurate spacing, with the array modifier’s eyedropper tool set to this empty axis. This allowed the legs to be evenly rotated and spaced, completing the chair’s basic structure for texturing.
+The metal rod started as a cylinder, shaped with inset and extrusions to form sturdy ridges. Legs and wheels were modeled as cylindrical shapes with inset, extrusion, and loop cuts to create sections. The wheels and legs were combined into one object, duplicated with an array modifier, and rotated evenly using an empty object as a reference.
 
 ### Textures  
 
-#### Leather for Chair Body  
-The leather texture for the chair body uses Texture Coordinate and Mapping nodes to ensure consistent mapping across the material. A high-scale Noise Texture provided a fine grain effect, creating leather-like roughness. A Color Ramp adjusted the color to a warm brown tone and was connected to the Base Color.
-
-To introduce depth and realism, a Bump Node driven by a second Color Ramp added small surface imperfections. The setup was linked to the Principled BSDF Shader and Material Output, resulting in a leather texture with realistic color and tactile detail.
-
-#### Metal Rod  
-The metal rod texture was created using a procedural approach. Starting with Texture Coordinate and Mapping nodes for precise control, a Noise Texture set to Fractal Brownian Motion (FBM) added fine surface detail. A Color Ramp adjusted the color variation, creating a subtle metallic look. 
-
-For added surface depth, a Bump Node driven by another Color Ramp was connected to simulate minor imperfections, achieving a polished metal effect. The setup was finalized by adjusting the Principled BSDF Shader’s Metallic and Roughness settings and linking to the Material Output.
-
-#### Matte Plastic for Legs  
-The legs’ matte plastic texture was generated procedurally with Texture Coordinate and Mapping nodes, eliminating the need for UV mapping. Two Noise Texture nodes were connected to prevent a completely smooth finish.
-
-The first Noise Texture was set to a high scale (100) for a fine grain, while the second was set to a lower scale (30) for larger, diffuse patterns, enhancing the matte effect with soft depth. Two Color Ramps controlled the color from dark gray to near-black and linked to a Bump Node for subtle depth. The Principled BSDF Shader had a roughness set to 1.0 for a non-glossy finish, connected to the Material Output, providing a realistic matte plastic texture with slight imperfections.
+For the chair body, a leather texture was created using high-scale Noise Texture for grain and a Color Ramp for a warm brown color, with a Bump Node adding subtle surface imperfections. The metal rod texture used a procedural Noise Texture with FBM for fine detail, and a Color Ramp provided subtle color variation. The legs’ matte plastic texture was created with high- and low-scale Noise Textures for grain and diffuse patterns, while Color Ramps adjusted color variations, and a Bump Node added surface depth. Roughness was set to 1.0 for a realistic matte finish.
 
 ### Lighting & Camera  
 
-
 ### Render Output Settings 
+- Render Engine: EEVEE
+- Viewport Samples: 64 (Temporal Reprojection enabled, Jittered Shadows disabled)
+- Render Samples: 4096
+- Shadows: Rays - 3, Steps - 6, Volume Shadows Steps - 16, Resolution - 1.000
+- Light Threshold: 0.010
+- High-Quality Normals: Enabled
+
 
 ### Image link in Repo
 https://github.com/Faiz-Iqbal/F20GA_Group7/blob/a8d3aca583ce0a6d8703e29a191b64057ed5ae7b/Render/Final_ChairAndWardrobe.jpg
