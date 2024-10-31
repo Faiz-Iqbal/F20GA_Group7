@@ -37,8 +37,8 @@ All objects are positioned slightly above the ground to emphasize shadow effects
   - Light Probes Volume: 64 MB
 - Viewport Pixel Size: 4x
 
-### Image link in Repo
-https://github.com/Faiz-Iqbal/F20GA_Group7/blob/a8d3aca583ce0a6d8703e29a191b64057ed5ae7b/Render/Final_ChairAndWardrobe.jpg
+### Image
+![Chair & Blender](https://github.com/Faiz-Iqbal/F20GA_Group7/blob/819eee9c1b8017acdcc08d1b47760f6022b860cd/Render/Final_ChairAndWardrobe.jpg)
 
 ## 2 - Bed and Plant  
 
@@ -71,7 +71,7 @@ All objects are positioned slightly above the ground to emphasize shadow effects
 - Viewport Pixel Size: 4x
 
 ### Image link in Repo
-https://github.com/Faiz-Iqbal/F20GA_Group7/blob/fc8266970a851c54b1d7d855c290e14c0ccb25d7/Render/Final_BedAndPlant.jpg
+![Bed & Plant](https://github.com/Faiz-Iqbal/F20GA_Group7/blob/819eee9c1b8017acdcc08d1b47760f6022b860cd/Render/Final_BedAndPlant.jpg)
 
 ## 3 - Table and Lamp  
 
@@ -100,14 +100,15 @@ All objects are positioned slightly above the ground to enhance shadow effects u
   - Light Probes Volume: 64 MB
 - Viewport Pixel Size: 4x
 
-### Image link in Repo
-https://github.com/Faiz-Iqbal/F20GA_Group7/blob/7e3057dae7e6209429d107486e24a6e2d74ac71c/Render/Final_Render_Table%26Lamp.jpg
+### Image
+![Table and Lamp](https://github.com/Faiz-Iqbal/F20GA_Group7/blob/819eee9c1b8017acdcc08d1b47760f6022b860cd/Render/Final_Render_Table%26Lamp.jpg)
 
 ## 4 - Final Isometric Room Render  
 
 The final room render includes additional details to enhance realism. A window was created using an Emission Shader applied to a cube, giving the appearance of natural light entering the room. A dustbin was modeled from a cylinder mesh, scaled and extruded for the shape, with paper balls crafted by manipulating vertices of a sphere in Edit Mode for an irregular, crumpled look. Only the carpet and picture frame were imported assets, keeping the rest of the objects custom-made.
 
-Link to Image in Repo: https://github.com/Faiz-Iqbal/F20GA_Group7/blob/7e3057dae7e6209429d107486e24a6e2d74ac71c/Render/Final_Isometric_Room.jpg
+### Final Image
+![Isometric Room Render](https://github.com/Faiz-Iqbal/F20GA_Group7/blob/bf8a95a346dfca112b5d76e7b8894dbca6fa1b4a/Render/Final_Isometric_Room.jpg)
 
 ### Final Render Output Settings  
 - Render Engine: EEVEE
