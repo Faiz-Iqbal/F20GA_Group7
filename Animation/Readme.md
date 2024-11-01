@@ -7,7 +7,7 @@ This README provides a comprehensive overview of the **Isometric Room Animation 
 
 ---
 
-## Project Overview
+## 1 - Project Overview
 
 We embarked on designing a realistic and visually appealing isometric room using Blender. After experimenting with both FBX and glTF formats for model export, we selected **FBX** for its compatibility with Unreal Engine. Prior to export, all models were UV unwrapped as necessary.
 
@@ -21,7 +21,7 @@ Additionally, we incorporated walls from the "Architecture" folder within Unreal
 
 ---
 
-## Animation Process
+## 2 - Animation Process
 
 In Unreal Engine's Sequencer, we added a new level sequence to animate each object individually, utilizing features like transform, camera components, and light components. Key animation concepts applied include:
 
@@ -36,7 +36,7 @@ In Unreal Engine's Sequencer, we added a new level sequence to animate each obje
 
 ---
 
-## Lighting Setup
+## 3 - Lighting Setup
 
 Our animation utilizes multiple light sources to clearly showcase all objects, enhancing textures, shadows, and reflections:
 
@@ -49,7 +49,7 @@ Our animation utilizes multiple light sources to clearly showcase all objects, e
 
 ---
 
-## Camera Configuration
+## 4 - Camera Configuration
 
 We opted for the **Cinema Camera Actor**, allowing us to set multiple tracking points for each object, facilitating focused zooms and movements. The camera remains stationary during object animations, moving closer from the succulent plant onwards to highlight finer details before returning to its original position. Settings include:
 
@@ -59,7 +59,7 @@ We opted for the **Cinema Camera Actor**, allowing us to set multiple tracking p
 
 ---
 
-## Final Rendering Output
+## 5 - Final Rendering Output
 
 For the final sequence render, we installed **FFmpeg**, an open-source encoder. Output settings:
 
