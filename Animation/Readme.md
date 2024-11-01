@@ -1,3 +1,6 @@
+# ONE DRIVE LINK: https://heriotwatt-my.sharepoint.com/:f:/r/personal/mm2046_hw_ac_uk/Documents/BSc%20Computer%20Science%20(Artificial%20Intelligence)/Academic%20Year%204/F20GA%20-%203D%20Graphics%20and%20Animation/Shared_Files/F20GA_Group7_CourseworkUploads?csf=1&web=1&e=UGtrtt
+
+
 # Part 2 - A video sequence animation of your scene.
 Export your models from the modelling tool into Unreal Engine. Replace and fix any pipeline problems (e.g., light sources, textures, positions) and animate an interesting video sequence using the Engine, Blueprints and Sequencer. Save this animation as a video. You need to use animation concepts, same models, and keep the output video short to less than 1 minute long.
 
